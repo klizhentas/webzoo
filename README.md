@@ -13,17 +13,17 @@ json response:
 
 ```json
 {
-  'headers': {
-       'key': ['val']
+  "headers": {
+       "Content-Length": [123]
    },
-   'form': {
-        'arg': ['val', 'val']
+   "form": {
+        "param": ["val1", "val2"]
    },
-   'args': {
-        'arg': ['val', 'val']
+   "args": {
+        "param": ["val1", "val2"]
    },
-   'files': {
-        'file': [{'name': 'name', data: 'base64-encoded-data'}]
+   "files": {
+        "file": [{"name": "file.txt", data: "base64-encoded-data"}]
    }
 }
 ```
@@ -63,7 +63,9 @@ Development mode
 
 * Build a dev image with framework you need:
 
+```bash
 docker build -t webzoo/flask-dev < python/flask/Dockerfile-Dev
+```
 
 * Run your interactive session for the instance
 
