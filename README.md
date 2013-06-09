@@ -23,7 +23,7 @@ json response:
         "param": ["val1", "val2"]
    },
    "files": {
-        "file": [{"name": "file.txt", data: "base64-encoded-data"}]
+        "file": [{"name": "file.txt", "data": "base64-encoded-data"}]
    }
 }
 ```
